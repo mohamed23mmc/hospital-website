@@ -1,0 +1,265 @@
+.about-section {
+    padding: 80px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-content li::before {
+    
+    color: #003c8f;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.about-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #0056b3;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-btn:hover {
+    background: #003c8f;
+    transform: translateY(-3px);
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-content li {
+        font-size: 1rem;
+    }
+
+    .about-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .about-image img {
+        max-width: 800px;
+    }
+}
+
+
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.7s ease-in-out;
+}
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.7s ease-in-out;
+}
+
+.hidden-buttom {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 0.7s ease-in-out;
+
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Achivements Start... */
+.achivements {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #1a73e8, #003c8f);
+    color: white;
+    border-radius: 10px;
+}
+
+.acivements-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.achivement {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+.achivement:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.achivement i {
+    font-size: 50px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.counter {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+
+.achivement p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .acivements-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achivement {
+        width: 90%;
+    }
+}
+
+
+/* Achivements End... */
+
+.hospital-news {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.hospital-news h2 {
+    margin-bottom: 30px;
+}
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+.news-card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.news-content {
+    padding: 15px;
+}
+.news-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.news-content p {
+    font-size: 14px;
+    color: #555;
+}
+.news-content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.news-content a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,161 @@
+.section-home {
+    width: 100%;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0f8ff, #d6e4ff);
+}
+
+.section-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+    width: 90%;
+    padding: 30px;
+}
+
+
+
+.section-text1 {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.section-text1 h2 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-text1 p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #333;
+}
+
+.section-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-image img {
+    width: 100%;
+    min-height: 400px;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.section-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.7s ease-in-out;
+}
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.7s ease-in-out;
+}
+
+.hidden-buttom {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 0.7s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .section-contact {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .section-image {
+        order: -1;
+        width: 100%;
+    }
+
+    .section-image img {
+        width: 100%;
+        min-height: 300px;
+        max-height: none;
+    }
+
+    .section-text1 h2 {
+        font-size: 2rem;
+    }
+
+    .section-text1 p {
+        font-size: 1rem;
+    }
+}
+
+
+.health-tips {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.health-tips h2 {
+    color: #007bff;
+    font-size: 30px;
+    margin-top: -50px;
+}
+.tip-card {
+    background-color: #007bff;
+    color: #f0f8ff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tip-card h3 {
+    padding: 10px;
+}
+.nav-buttons {
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: -20px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 20px 10px;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteHospital</title>
+    <!-- link Css -->
+    <link rel="stylesheet" href="Hospital.css">
+    <link rel="stylesheet" href="About.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Home Start -->
+    <header>
+        <div class="hospital-logo"><span>E</span>lite<span>H</span>ospital</div>
+        <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navbar" id="navMenu">
+            <button class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+                <h3 class="address"><span>E</span>lite <span>H</span>ospital</h3>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Medical Services</a></li>
+                <li><a href="our.html">Our Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="contactus.html">Contact US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- === About Section Start === -->
+    <section class="about-section">
+        <div class="about-container hidden-left">
+
+            <div class="about-image">
+                <img src="images/AdobeStock_305412791-scaled.jpeg" alt="">
+            </div>
+
+            <div class="about-content">
+                <h1>About Elite Hospital</h1>
+                <p class="about-text">
+                </p>
+                <h3></h3>
+                <ul>
+                    <li>🏥 Advanced medical technology</li>
+                    <li>👨‍⚕️ Highly experienced doctors & nurses</li>
+                    <li>⏳ 24/7 Emergency care</li>
+                    <li>💊 Comprehensive medical services</li>
+                    <li>🌍 International patient care</li>
+                </ul>
+                <a href="#" class="about-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Achievements Section -->
+
+    <section class="achivements hidden-right">
+        <h2>our Achivements</h2>
+        <div class="acivements-container">
+            <div class="achivement">
+                <i class="fa-solid  fa-user-md"></i>
+                <h3 class="counter" data-target="500">0</h3>
+                <p>Specialist Doctors</p>
+            </div>
+
+            <div class="achivement">
+                <i class="fa-solid fa-hospital"></i>
+                <h3 class="counter" data-target="1000">0</h3>
+                <p>Patients Treated</p>
+            </div>
+
+            <div class="achivement">
+                <i class="fa-solid  fa-award"></i>
+                <h3 class="counter" data-target="50000">0</h3>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hospital-news hidden-left">
+        <h2>Latest News & Updates 🏥</h2>
+        <div class="news-container">
+            <div class="news-card">
+                <img src="images/IMG_20240807_204029_398.jpg" alt="Hospital Expansion">
+                <div class="news-content">
+                    <h3>Elite Hospital Expands Emergency Unit</h3>
+                    <p>Our new emergency unit is now open to serve patients 24/7 with state-of-the-art facilities.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+    
+            <div class="news-card">
+                <img src="images/Doctor.Exam.jpg" alt="Medical Award">
+                <div class="news-content">
+                    <h3>Elite Hospital Wins Healthcare Excellence Award</h3>
+                    <p>We are honored to receive the Healthcare Excellence Award for outstanding medical services.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+    
+            <div class="news-card">
+                <img src="images/R.jpeg" alt="Free Checkup Camp">
+                <div class="news-content">
+                    <h3>Free Health Check-up Camp for the Community</h3>
+                    <p>Join us for a free health check-up event to raise awareness about preventive healthcare.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="subscribe-box hidden-buttom">
+        <h3>Subscribe to our Newsletter</h3>
+        <input type="email" id="emailInput" placeholder="Enter your email addres">
+        <button onclick="subscribe()">Subscribe</button>
+        <p id="msg"></p>
+      </div>
+      
+
+    
+    <footer>
+        <div class="footer-container hidden-buttom">
+            <div class="footer-section">
+
+                <h3>EliteHospital</h3>
+                <p>Elite Hospital provides top-quality medical care with specialized centers and 24/7 emergency
+                    services.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#"></a>Home</li>
+                    <li><a href="#"></a>About</li>
+                    <li><a href="#"></a>Medical Service</li>
+                    <li><a href="#"></a>Our Doctors</li>
+                    <li><a href="#"></a>Appointments</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> support@elitehospital.com</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone-volume"></i> +1 234 567 890</a></li>
+                    <li><a href="#"><i class="fa-solid fa-headset"></i> 24/7 Live Chat Support</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Follow</h3>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright"></p>
+        </div>
+    </footer>
+    <script src="About.js"></script>
+    <script src="nav.js"></script>
+    
+</body>
